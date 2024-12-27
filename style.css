@@ -322,7 +322,116 @@ border-radius: 6px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-image: url;
+    background-image: url("images/banner/b2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding:50px;
   }
+ #banner span{
+  color:#ef3636;
+ }
+ #banner h2{
+  color:white;
+  font-size: 30px;
+  padding:10px 0;
 
-  
+ }
+ #banner h4{
+  color:white;
+  font-size: 1rem;
+
+ }
+#banner button,.sm-banner1 button{
+  padding:15px 30px;
+  border-radius:4px;
+  cursor:pointer;
+  border:none;
+  outline:0;
+  transition:0.5s linear;
+  position: relative;
+  overflow: hidden;
+z-index: 1; 
+
+
+}
+#banner button::after,.sm-banner1 button::after{
+content:"";
+width:0;
+height:100%;
+background-color:transparent;
+position: absolute;
+top:0;
+left:0;
+bottom:0;
+border-radius:4px;
+transition:0.5s linear;
+z-index: -1; 
+
+
+
+}
+
+#banner button:hover::after,.sm-banner1 button:hover::after{
+background-color: #ef3636;
+color:white;
+width:100%;
+
+
+}
+.sm-banner1 button:hover::after{
+  background-color: #088178;
+
+}
+#banner button:hover{
+  color:white;
+
+}
+#sm-banner{
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:10px
+}
+
+
+.sm-banner1{
+
+  background-image: url('images/banner/b17.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  /* padding:40px 40px 40px 10px; */
+  flex:1;
+  padding:40px 0 40px 30px;
+  display:flex;
+  text-align:center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+
+}
+
+
+.sm-banner1 h3{
+font-weight: 800;
+color:white;
+}
+.sm-banner1 p{
+font-size:10px;
+}
+.sm-banner1 button{
+  background-color: transparent;
+  border:solid 2px white
+
+}
+.banner2{
+  background-image: url('images/banner/b10.jpg');
+
+}
+.banner2 p{
+  color:black;
+}
+.banner2 button{
+  color:white;
+}
