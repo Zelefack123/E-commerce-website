@@ -1,9 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "spartan", sans-serif;
 }
+
 body {
   height: 100vh;
   overflow-x: hidden;
@@ -143,16 +148,22 @@ nav ul li a.active::after {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  gap:3px;
+  flex-wrap: wrap;
+  /* width:100% */
 }
 #feature div {
-  width: 180px;
+  width: 170px;
   text-align: center;
   padding: 30px 20px;
   border-radius: 4px;
   box-shadow: 20px 20px 36px rgba(0, 0, 0, 0.03);
   border: 1px solid #cce7d0;
   cursor: pointer;
+}
+
+#feature div img{
+  width: 100%;
 }
 
 #feature div:hover {
@@ -300,6 +311,7 @@ nav ul li a.active::after {
   background-repeat: no-repeat;
   background-size: cover;
   padding: 50px;
+  min-height: 40vh;
 }
 #banner span {
   color: #ef3636;
@@ -619,15 +631,13 @@ footer a:hover {
     margin-right: 2px;
     width: 100%;
 }
-  #product {
-    padding: 1px;
-  }
+
   .product2 {
     row-gap: normal;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: auto;
-    column-gap: 30px;
+    column-gap: 20px;
   }
 
   .product2 div:not(.stars) {
@@ -665,12 +675,13 @@ footer a:hover {
   #banner {
     height: 30vh;
   }
-  #banner button,
-  .sm-banner1 button {
+
+
+  #banner button, .sm-banner1 button {
     padding: 18px;
     border-radius: 4px;
     cursor: pointer;
-    border: none;
+    /* border: none; */
     outline: 0;
     transition: 0.5s linear;
     position: relative;
@@ -680,7 +691,7 @@ footer a:hover {
     text-align: center;
     vertical-align: center;
     line-height: 2px;
-  }
+}
   #sm-banner {
     display: flex;
     justify-content: space-between;
@@ -760,8 +771,22 @@ footer a:hover {
 }
 
 @media (max-width: 430px) {
+  #hero {
+    background-image: url("images/home/lady.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(231, 222, 222);
+    padding-left: 10px;
+}
   #feature {
-    padding-left: 30px;
+  
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
@@ -785,7 +810,7 @@ footer a:hover {
     box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.05);
     margin: 20px 0;
     transition: 0.2s ease-in-out;
-    width: 350px;
+    width: 100%;
   }
 
   #hero {
@@ -803,24 +828,22 @@ footer a:hover {
     padding-left: 30px;
   }
 
-  .navlinks {
-    display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: column;
-    row-gap: 10px;
-    padding-left: 20px;
-    padding-top: 200px;
-    background-color: #e3e6f3;
-    box-shadow: 0px 40px 60px rgba(0, 0, 0, 0.3);
+  #hero {
+    background-image: url("images/home/lady.png");
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 100vh;
-    width: 300px;
-    position: fixed;
-    top: 0;
-    right: -306px;
-    transition: 0.5s;
-  }
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgb(231, 222, 222);
+    /* padding-left: 30px; */
 }
+}
+/* about section */
 
 #page-header {
   background-image: url("images/banner/b1.jpg");
